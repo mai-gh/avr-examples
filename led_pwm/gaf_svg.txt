@@ -1,0 +1,2 @@
+# to create a svg picture from a sch file use `gaf export`
+# $ gaf export -o avr-pwm-rgbled.svg avr-pwm-rgbled.scm

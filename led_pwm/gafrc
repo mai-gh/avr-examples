@@ -1,0 +1,17 @@
+;-------------------------------------------------------------------------
+;
+; ./gafrc
+;
+; this is the configuration file for geda-gaf for this project
+; it is parsed after system config files, 
+;
+;-------------------------------------------------------------------------
+
+(reset-component-library)
+
+(define default-titleblock "")
+
+(component-library-search "./symbols")
+
+
+; EOF
