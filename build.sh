@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 CFILE="$1"
 
 if [ "$(echo "$CFILE" | sed 's/.*\(\.c\)$/\1/')" != '.c' ]; then
@@ -10,13 +9,6 @@ if [ "$(echo "$CFILE" | sed 's/.*\(\.c\)$/\1/')" != '.c' ]; then
 fi
 
 BASEFILENAME="$(echo "$CFILE" | sed 's/\(.*\)\.c/\1/')"
-
-
-
-
-
-
-
 
 avr-gcc -g -Os -mmcu=atmega328p -c "$CFILE" &&
 avr-gcc -B/usr/avr/lib/avr25 -g -mmcu=atmega328p -o "$BASEFILENAME".elf "$BASEFILENAME".o &&
